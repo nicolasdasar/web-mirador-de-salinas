@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirador de Salinas — Residencias de Lujo en la Costa Asturiana</title>
+    <meta name="description" content="Descubra Mirador de Salinas: 24 residencias exclusivas frente al Cantábrico. Arquitectura de vanguardia, interiores de autor y un estilo de vida incomparable en Salinas, Asturias.">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .animate-on-scroll {
+            opacity: 0; transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1; transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div class="preloader">
+    <span class="preloader-text">Mirador de Salinas</span>
+    <div class="preloader-line"></div>
+</div>
+
+<!-- NAV -->
+<nav>
+    <div class="nav-logo">
+        <a href="https://www.dasargestion.com" target="_blank" rel="noopener noreferrer">
+            <img src="./logo-dasar.png" alt="DASAR Gestión Patrimonial">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#proyecto">El Proyecto</a></li>
+        <li><a href="#interiores">Interiores</a></li>
+        <li><a href="#aticos">Áticos Dúplex</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#calidades">Calidades</a></li>
+        <li><a href="#viviendas">Viviendas</a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="nav-menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero-new" id="inicio">
+    <div class="hero-new-left">
+        <span class="hero-badge">Nueva Promoción Exclusiva</span>
+        <h1>Mirador de Salinas</h1>
+        <p class="hero-sub">El nuevo referente residencial de la costa asturiana. 24 residencias de autor donde la arquitectura de vanguardia y el Cantábrico se funden en un estilo de vida sin precedentes.</p>
+        <div class="hero-ctas">
+            <a href="#viviendas" class="btn-hero-primary">Ver Viviendas</a>
+            <a href="#contacto" class="btn-hero-secondary">Contactar</a>
+        </div>
+        <div class="hero-logos">
+            <img src="./logo-dasar.png" alt="DASAR">
+            <span class="hero-logos-divider"></span>
+            <img src="./logo_horizonte.png" alt="Horizonte Patrimonial">
+        </div>
+    </div>
+    <div class="hero-new-right">
+        <img src="hero_render.png" alt="Mirador de Salinas">
+    </div>
+</section>
+
+<!-- INTERIORES -->
+<section class="render-showcase" id="interiores">
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image">
+            <img src="./campon_living_room_v1.png" alt="Salón Comedor de Lujo">
+        </div>
+        <div class="render-info">
+            <span class="tag">Zona de Día</span>
+            <h3>El Salón: Su Espacio Vital</h3>
+            <p>Espacios amplios, luminosos y cálidos que conectan visualmente con el Cantábrico. Grandes ventanales de suelo a techo integran el paisaje exterior con la calidez del hogar, creando estancias que maximizan la luz natural.</p>
+            <p>Pavimentos nobles, carpinterías de diseño con herrajes ocultos y acabados en tonos neutros componen una estética limpia y sofisticada.</p>
+            <div class="highlight-quote">Espacios fluidos donde la nobleza de los materiales crea una atmósfera de sofisticación relajada.</div>
+        </div>
+    </div>
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image">
+            <img src="./campon_kitchen_roundabout_final_v2.png" alt="Cocina de Diseño">
+        </div>
+        <div class="render-info">
+            <span class="tag">Cocina Integrada</span>
+            <h3>Cocinas de Vanguardia</h3>
+            <p>El corazón visual de la zona de día, fusionando la estética del mueble de salón con la más alta tecnología culinaria. Mobiliario de diseño con frentes lisos en acabados premium combinados con paneles de madera noble.</p>
+            <p>Isla central con superficies de alta resistencia, electrodomésticos de gama superior totalmente integrados y grifería de diseño en acabados exclusivos.</p>
+            <div class="highlight-quote">Diseño exquisito y alta tecnología para el corazón de la vivienda.</div>
+        </div>
+    </div>
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image" style="background: #FDFBF7;">
+            <img src="campon_bedroom_render.png" alt="Dormitorio Panorámico" style="object-fit:cover; object-position:center center;">
+        </div>
+        <div class="render-info">
+            <span class="tag">Zona de Noche</span>
+            <h3>Descanso Panorámico</h3>
+            <p>Ventanales de suelo a techo que maximizan la entrada de luz natural y la conexión con el entorno, creando un ambiente de serenidad y relax.</p>
+            <p>Materiales cálidos, diseño funcional y domótica integrada para un confort absoluto en sus momentos de descanso.</p>
+            <div class="highlight-quote">El descanso elevado a su máxima expresión.</div>
+        </div>
+    </div>
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image">
+            <img src="./campon_bathroom_v4_wood_gold.png" alt="Baño Principal Spa">
+        </div>
+        <div class="render-info">
+            <span class="tag">Baños</span>
+            <h3>Santuario Privado</h3>
+            <p>Diseño estilo Boutique Spa con iluminación indirecta y materiales nobles. Revestimientos de gran formato de suelo a techo para minimizar juntas, sanitarios de diseño suspendidos y mobiliario con acabados de primera calidad.</p>
+            <p>Grifería empotrada en acabados exclusivos, mamparas de cristal minimalistas sin perfilería y espejos retroiluminados con sistema antivaho.</p>
+            <div class="highlight-quote">Líneas puras y revestimientos de primera calidad para un bienestar absoluto.</div>
+        </div>
+    </div>
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image">
+            <img src="./campon_terrace_flat_facade.png" alt="Terraza Privada con Vistas">
+        </div>
+        <div class="render-info">
+            <span class="tag">Exterior Privado</span>
+            <h3>Terrazas Exclusivas</h3>
+            <p>La prolongación natural del interior hacia el exterior, enmarcada por la espectacular arquitectura de la fachada. Pavimentos en continuidad visual absoluta con el interior al abrir los ventanales panorámicos.</p>
+            <p>Barandillas de vidrio transparente sin montantes verticales maximizando las vistas al mar, e iluminación ambiental para disfrutar del atardecer sobre el Cantábrico.</p>
+            <div class="highlight-quote">Una prolongación natural de su hogar hacia el horizonte.</div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ATICOS DUPLEX -->
+<section class="section" id="aticos">
+    <div class="render-block animate-on-scroll">
+        <div class="render-image" style="background: #FDFBF7;">
+            <img src="atico_terraza_render.png" alt="Terraza Ático Dúplex" style="object-fit:cover; object-position:center center;">
+        </div>
+        <div class="render-info">
+            <span class="tag">Colección Exclusiva · Solo 4 Unidades</span>
+            <h3>Colección Áticos Dúplex</h3>
+            <p>Cuatro únicas viviendas que coronan el edificio en plantas 5ª y 6ª. Distribuidas en dos niveles comunicados por escalera interior propia, los áticos dúplex de Mirador de Salinas ofrecen la privacidad y amplitud de una casa unifamiliar con las vistas del Cantábrico como protagonista.</p>
+
+            <p><strong>Tipo Ad</strong> — 3 dormitorios, 3 baños. Planta baja con gran salón-comedor de doble altura, cocina integrada y dormitorio en suite. Planta alta con dos dormitorios adicionales y baño. Terraza panorámica de 26,78 m² con orientación privilegiada al mar.</p>
+
+            <p><strong>Tipo Bd</strong> — 2 dormitorios, 3 baños. Distribución dúplex con salón de doble altura en planta principal y dormitorio en suite en planta superior. Terraza de 21,23 m² integrada en la arquitectura del ático.</p>
+
+            <div class="highlight-quote">Cuatro únicas oportunidades. Una posición sin igual sobre el Cantábrico.</div>
+            <a href="#viviendas" class="btn-section">⇒ Ver los 4 Áticos Disponibles</a>
+        </div>
+    </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section" id="amenities">
+    <div class="section-header animate-on-scroll">
+        <span class="section-tag">Zonas Comunes</span>
+        <h2>El Privilegio del Bienestar</h2>
+        <p>Mirador de Salinas trasciende los límites de su vivienda para ofrecerle un ecosistema de comodidades dignas del mejor club privado. Espacios concebidos para cultivar la mente, cuidar el cuerpo y fomentar las relaciones sociales.</p>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image">
+            <img src="./campon_piscina_flat_facade.png" alt="Piscina Exterior">
+        </div>
+        <div class="render-info">
+            <span class="tag">Oasis Exterior</span>
+            <h3>Piscina y Solárium</h3>
+            <p>Un espectacular oasis exterior para disfrutar del clima estival con total privacidad. Zona de solárium con tumbonas y paisajismo mediterráneo diseñado para crear un ambiente exclusivo y sereno.</p>
+            <div class="highlight-quote">Un refugio estival diseñado para disfrutar con total privacidad.</div>
+        </div>
+    </div>
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image">
+            <img src="./campon_piscina_interior_final.png" alt="Piscina Interior Climatizada">
+        </div>
+        <div class="render-info">
+            <span class="tag">Santuario Termal</span>
+            <h3>Piscina Interior Climatizada</h3>
+            <p>Un santuario termal interior que le invita al relax más profundo durante todo el año. Acabados en piedra natural y madera que envuelven el espacio en una atmósfera de serenidad absoluta.</p>
+            <div class="highlight-quote">El lujo no entiende de estaciones.</div>
+        </div>
+    </div>
+
+    <div class="render-block animate-on-scroll">
+        <div class="render-image">
+            <img src="./campon_gimnasio_final.png" alt="Gimnasio Premium">
+        </div>
+        <div class="render-info">
+            <span class="tag">Espacio Wellness</span>
+            <h3>Gimnasio de Última Generación</h3>
+            <p>Equipado para satisfacer las mayores exigencias, con vistas al exterior y una atmósfera que invita al cuidado personal. Un espacio que complementa la experiencia residencial con un enfoque integral de bienestar.</p>
+            <div class="highlight-quote">Cultivar la mente y cuidar el cuerpo sin salir de casa.</div>
+        </div>
+    </div>
+</section>
+
+<!-- INTERACTIVE BUILDING HOTSPOTS -->
+<section class="section" id="edificio-interactivo">
+    <div class="section-header animate-on-scroll">
+        <span class="section-tag">Arquitectura & Materiales</span>
+        <h2>Un Edificio de Excelencia</h2>
+        <p>Explore los detalles constructivos y materiales que hacen de Mirador de Salinas una referencia en calidad residencial.</p>
+        <div class="section-divider"></div>
+    </div>
+    <div class="building-hotspot-container animate-on-scroll">
+        <img src="v54_facade_clean.png" alt="Fachada Mirador de Salinas" class="building-hotspot-img">
+
+        <!-- Hotspot 1: Áticos / Cubierta -->
+        <div class="hotspot" style="top: 17%; left: 48%;">
+            <div class="hotspot-pulse"></div>
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip hotspot-tooltip-bottom">
+                <strong>Áticos Dúplex</strong>
+                <p>Coronan el edificio en las plantas 5ª y 6ª. Cubiertas planas invertidas con aislamiento térmico reforzado y acabado en grava lavada. Terraza privada con vistas panorámicas 360°.</p>
+            </div>
+        </div>
+
+        <!-- Hotspot 2: Fachada / Composite -->
+        <div class="hotspot" style="top: 35%; left: 32%;">
+            <div class="hotspot-pulse"></div>
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip hotspot-tooltip-right">
+                <strong>Fachada Orgánica</strong>
+                <p>Paneles de composite de aluminio en acabado champagne con formas curvilíneas. Diseño orgánico que aporta una estética escultórica única y protección contra la intemperie.</p>
+            </div>
+        </div>
+
+        <!-- Hotspot 3: Ventanales -->
+        <div class="hotspot" style="top: 42%; left: 58%;">
+            <div class="hotspot-pulse"></div>
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip hotspot-tooltip-left">
+                <strong>Ventanales Panorámicos</strong>
+                <p>Carpintería de aluminio con rotura de puente térmico y doble acristalamiento bajo emisivo. Ventanales de suelo a techo que maximizan la luz natural y las vistas al Cantábrico.</p>
+            </div>
+        </div>
+
+        <!-- Hotspot 4: Terrazas -->
+        <div class="hotspot" style="top: 53%; left: 40%;">
+            <div class="hotspot-pulse"></div>
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip hotspot-tooltip-right">
+                <strong>Terrazas Privadas</strong>
+                <p>Pavimento de gres porcelánico antideslizante en continuidad con el interior. Barandillas de vidrio templado laminar sin montantes verticales para maximizar las vistas.</p>
+            </div>
+        </div>
+
+        <!-- Hotspot 5: Estructura -->
+        <div class="hotspot" style="top: 68%; left: 55%;">
+            <div class="hotspot-pulse"></div>
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip hotspot-tooltip-left">
+                <strong>Estructura</strong>
+                <p>Estructura de hormigón armado HA-30 con cimentación profunda mediante pilotes. Forjados reticulares con amplia luz libre que permiten distribuciones interiores flexibles y diáfanas.</p>
+            </div>
+        </div>
+
+        <!-- Hotspot 6: Zona Comunitaria / Piscina -->
+        <div class="hotspot" style="top: 82%; left: 42%;">
+            <div class="hotspot-pulse"></div>
+            <div class="hotspot-dot"></div>
+            <div class="hotspot-tooltip hotspot-tooltip-top">
+                <strong>Zonas Comunes Premium</strong>
+                <p>Piscina exterior con solárium en tarima de composite, paisajismo mediterráneo, piscina interior climatizada y gimnasio. Acabados de piedra natural y madera noble.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MEMORIA DE CALIDADES -->
+<section class="section section-dark" id="calidades">
+    <div class="section-header animate-on-scroll">
+        <span class="section-tag">Memoria de Calidades</span>
+        <h2>Excelencia en Cada Detalle</h2>
+        <p>Una selección minuciosa de materiales, acabados e instalaciones que elevan cada rincón de la vivienda al máximo estándar. Porque en Mirador de Salinas, la excelencia no es una opción, es la norma.</p>
+        <div class="section-divider"></div>
+    </div>
+
+    <div class="calidades-editorial">
+
+        <div class="calidad-editorial-item animate-on-scroll">
+            <div class="calidad-editorial-num">01</div>
+            <div class="calidad-editorial-body">
+                <h4>Zonas de Día</h4>
+                <p class="calidad-editorial-desc">Pavimento porcelánico de gran formato en zonas de paso y estancias principales. Carpintería interior de calidad con puertas hasta el techo en acabado lacado. Ventanas de aluminio con doble acristalamiento y rotura de puente térmico, garantizando aislamiento térmico y acústico.</p>
+                <div class="calidad-chips">
+                    <span>Porcelánico gran formato</span><span>Puertas hasta techo</span><span>RPT doble vidrio</span><span>Aislamiento acústico</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="calidad-editorial-item animate-on-scroll">
+            <div class="calidad-editorial-num">02</div>
+            <div class="calidad-editorial-body">
+                <h4>Cocina</h4>
+                <p class="calidad-editorial-desc">Mobiliario de cocina equipado con electrodomésticos incluidos. Encimera de material compacto resistente. Fregadero y grifo de diseño. Campana extractora integrada o de diseño. Concebida como espacio abierto y funcional integrado en la zona de día.</p>
+                <div class="calidad-chips">
+                    <span>Electrodomésticos incluidos</span><span>Encimera compacta</span><span>Campana integrada</span><span>Diseño abierto</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="calidad-editorial-item animate-on-scroll">
+            <div class="calidad-editorial-num">03</div>
+            <div class="calidad-editorial-body">
+                <h4>Baños</h4>
+                <p class="calidad-editorial-desc">Revestimiento porcelánico de calidad en suelo y paredes. Sanitarios suspendidos de primera marca con cisterna empotrada. Mueble de baño con lavabo integrado. Grifo monomando. Mampara fija de ducha o bañera según tipología.</p>
+                <div class="calidad-chips">
+                    <span>Sanitarios suspendidos</span><span>Cisterna empotrada</span><span>Mampara de ducha</span><span>Mueble con lavabo</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="calidad-editorial-item animate-on-scroll">
+            <div class="calidad-editorial-num">04</div>
+            <div class="calidad-editorial-body">
+                <h4>Dormitorios</h4>
+                <p class="calidad-editorial-desc">Pavimento porcelánico o laminado en dormitorios. Armarios empotrados con puertas correderas. Persiana enrollable en ventanas exteriores. Preintalación de puntos de luz y tomas eléctricas según normativa.</p>
+                <div class="calidad-chips">
+                    <span>Armarios empotrados</span><span>Persianas exteriores</span><span>Instalación eléctrica completa</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="calidad-editorial-item animate-on-scroll">
+            <div class="calidad-editorial-num">05</div>
+            <div class="calidad-editorial-body">
+                <h4>Terrazas &amp; Fachada</h4>
+                <p class="calidad-editorial-desc">Fachada de diseño orgánico con acabados de composite y lamas verticales, tal y como se aprecia en los renders del proyecto. Pavimento exterior de gres porcelánico antideslizante. Barandillas de vidrio con montantes metálicos. Puertas correderas de gran formato hacia las terrazas.</p>
+                <div class="calidad-chips">
+                    <span>Fachada composite</span><span>Lamas verticales</span><span>Gres antideslizante</span><span>Barandillas de vidrio</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="calidad-editorial-item animate-on-scroll">
+            <div class="calidad-editorial-num">06</div>
+            <div class="calidad-editorial-body">
+                <h4>Instalaciones</h4>
+                <p class="calidad-editorial-desc">Sistema de producción de ACS mediante aerotermia. Preinstalación de climatización por unidades individuales (splits). Ventilación mecánica controlada según normativa CTE. Videoportero digital. Instalación eléctrica completa según REBT. Certificación energética según proyecto.</p>
+                <div class="calidad-chips">
+                    <span>Aerotermia ACS</span><span>Preinstalación AC</span><span>VMC</span><span>Videoportero</span><span>Certificación energética</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIVIENDAS -->
+<section class="section" id="viviendas">
+    <div class="section-header animate-on-scroll">
+        <span class="section-tag">24 Residencias Exclusivas</span>
+        <h2>Encuentre Su Hogar</h2>
+        <p>Seleccione la vivienda que mejor se adapte a sus necesidades. Todas las unidades disponen de plaza de garaje y trastero incluidos, existiendo la posibilidad de adquirir una plaza de garaje extra. Pulse sobre cualquier vivienda para consultar su plano.</p>
+        <div class="section-divider"></div>
+    </div>
+    <div class="units-grid" id="units-grid"></div>
+</section>
+
+<!-- MODALS -->
+<!-- Price Modal -->
+<div class="modal-overlay" id="price-modal">
+    <div class="modal" style="max-width: 400px; text-align: center; padding: 50px; background: #fff; border-top: 4px solid var(--gold);">
+        <button class="modal-close" onclick="closeModals()">×</button>
+        <div style="margin-bottom: 0;">
+            <h3 id="modal-price-name" style="margin-bottom: 20px; color: var(--charcoal);"></h3>
+            <div style="font-size: 0.8rem; color: var(--gold); letter-spacing: 2px; text-transform: uppercase;">Precio</div>
+            <span class="modal-price" id="modal-price-value" style="display: block; margin-top: 10px; font-size: 2rem; color: var(--charcoal);"></span>
+        </div>
+    </div>
+</div>
+
+<!-- Plan Modal -->
+<div class="modal-overlay" id="plan-modal">
+    <div class="modal" style="padding: 0; max-width: 90vw; max-height: 90vh; background: transparent; box-shadow: none; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <button class="modal-close" onclick="closeModals()" style="color: white; right: 0; top: -40px;">×</button>
+        <img id="modal-plan-img" src="" alt="Plano de la vivienda" style="max-width: 100%; max-height: 80vh; display: block; margin: 0 auto; border-radius: 4px; background: #fff;">
+        <button onclick="closeModals()" style="margin-top: 20px; padding: 10px 30px; background: var(--gold); color: white; border: none; cursor: pointer; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; border-radius: 2px;">Volver</button>
+    </div>
+</div>
+
+<!-- CONTACTO -->
+<section class="section section-contact" id="contacto">
+    <div class="section-header animate-on-scroll">
+        <span class="section-tag">Estamos a su Disposición</span>
+        <h2>Contacte con Nosotros</h2>
+        <p>Nuestro equipo estará encantado de atenderle y resolver todas sus dudas sobre Mirador de Salinas.</p>
+        <div class="section-divider"></div>
+    </div>
+    <div class="contact-layout animate-on-scroll">
+        <div class="contact-form-wrap">
+            <!-- Hidden iframe to handle silent form submission without redirects or CORS errors -->
+            <iframe name="hidden-iframe" id="hidden-iframe" style="display: none;"></iframe>
+            <form id="contact-form" action="https://submify.vercel.app/info@dasargestion.com" method="POST" target="hidden-iframe" onsubmit="sendContactForm(event)">
+                <input type="hidden" name="_subject" value="Nuevo lead: Mirador de Salinas">
+                <div class="form-group">
+                    <label for="contact-name">Nombre y Apellidos *</label>
+                    <input type="text" id="contact-name" name="name" required placeholder="Su nombre completo">
+                </div>
+                <div class="form-group">
+                    <label for="contact-phone">Teléfono de Contacto *</label>
+                    <input type="tel" id="contact-phone" name="phone" required placeholder="+34 600 000 000">
+                </div>
+                <div class="form-group">
+                    <label for="contact-unit">Vivienda de Interés</label>
+                    <select id="contact-unit" name="unit">
+                        <option value="">-- Seleccione una vivienda --</option>
+                        <optgroup label="Portal 12">
+                            <option>1º B — Portal 12 (Tipo B · 67,77 m²)</option>
+                            <option>1º C — Portal 12 (Tipo C · 44,52 m²)</option>
+                            <option>1º D — Portal 12 (Tipo D · 46,79 m²)</option>
+                            <option>2º B — Portal 12 (Tipo B · 67,77 m²)</option>
+                            <option>2º A — Portal 12 (Tipo A · 94,85 m²)</option>
+                            <option>3º B — Portal 12 (Tipo B · 67,77 m²)</option>
+                            <option>3º C — Portal 12 (Tipo C · 44,52 m²)</option>
+                            <option>3º D — Portal 12 (Tipo D · 46,79 m²)</option>
+                            <option>4º B — Portal 12 (Tipo B · 67,77 m²)</option>
+                            <option>4º A — Portal 12 (Tipo A · 94,85 m²)</option>
+                            <option>5º Ad — Portal 12 (Ático Dúplex · 135,06 m²)</option>
+                            <option>5º Bd — Portal 12 (Ático Dúplex · 96,01 m²)</option>
+                        </optgroup>
+                        <optgroup label="Portal 14">
+                            <option>1º B — Portal 14 (Tipo B · 67,77 m²)</option>
+                            <option>1º C — Portal 14 (Tipo C · 44,52 m²)</option>
+                            <option>1º D — Portal 14 (Tipo D · 46,79 m²)</option>
+                            <option>2º B — Portal 14 (Tipo B · 67,77 m²)</option>
+                            <option>2º A — Portal 14 (Tipo A · 94,85 m²)</option>
+                            <option>3º B — Portal 14 (Tipo B · 67,77 m²)</option>
+                            <option>3º C — Portal 14 (Tipo C · 44,52 m²)</option>
+                            <option>3º D — Portal 14 (Tipo D · 46,79 m²)</option>
+                            <option>4º B — Portal 14 (Tipo B · 67,77 m²)</option>
+                            <option>4º A — Portal 14 (Tipo A · 94,85 m²)</option>
+                            <option>5º Ad — Portal 14 (Ático Dúplex · 135,06 m²)</option>
+                            <option>5º Bd — Portal 14 (Ático Dúplex · 96,01 m²)</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Mensaje (opcional)</label>
+                    <textarea id="contact-message" name="message" rows="4" placeholder="Indíquenos cualquier consulta adicional..."></textarea>
+                </div>
+                <button type="submit" class="btn-contact-submit" id="btn-submit">Enviar Consulta</button>
+                <p id="form-feedback" style="display:none; margin-top:15px; font-size:0.9rem; text-align:center;"></p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <div class="contact-info-block">
+                <span class="contact-icon">✆</span>
+                <div>
+                    <div class="contact-label">Llámenos directamente</div>
+                    <a href="tel:+34984277119" class="contact-value">984 277 119</a>
+                </div>
+            </div>
+            <div class="contact-info-block">
+                <span class="contact-icon">✉</span>
+                <div>
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:info@dasargestion.com" class="contact-value">info@dasargestion.com</a>
+                </div>
+            </div>
+            <div class="contact-info-block">
+                <span class="contact-icon">◎</span>
+                <div>
+                    <div class="contact-label">Ubicación</div>
+                    <span class="contact-value">Salinas, Castrillón — Asturias</span>
+                </div>
+            </div>
+            <div class="contact-tagline">Estaremos encantados de atenderle y acompañarle en cada paso de su decisión.</div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-logos">
+        <img src="./logo-dasar.png" alt="DASAR">
+        <div class="divider"></div>
+        <img src="./logo_horizonte.png" alt="Horizonte Patrimonial">
+    </div>
+    <p class="footer-legal">Las imágenes, renders (3D) y características descritas tienen carácter orientativo e informativo y no poseen valor contractual. El diseño, calidades y demás elementos podrán sufrir variaciones por exigencias técnicas o de diseño.</p>
+    <p class="footer-copy">©2026 DASAR y Horizonte Patrimonial. Todos los derechos reservados.<br>
+    <a href="https://www.dasargestion.com">www.dasargestion.com</a> · <a href="https://www.horizontepatrimonial.com">www.horizontepatrimonial.com</a></p>
+</footer>
+
+<script src="script_final.js"></script>
+</body>
+</html>
